@@ -1,156 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Level Fit - Gamify Your Fitness Journey</title>
-  <meta name="description" content="Level Up Fitness is an upcoming app that combines workout challenges with gaming elements to make exercise fun and engaging.">
-  
-  <!-- Google Fonts -->
+  <meta name="description"
+    content="Level Up Fitness is an upcoming app that combines workout challenges with gaming elements to make exercise fun and engaging.">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'page-bg': '#fef6f2',
-            'text-secondary': '#383838',
-            'text-muted': '#c2c2c2',
-            'accent-orange': '#e55f0c',
-          },
-          fontFamily: {
-            'fira': ['"Fira Sans Condensed"', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-  
-  <link rel="stylesheet" href="index.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-  
-  <!-- Frame 3 - Main container -->
-  <div class="frame-3" data-node-id="3:24">
-    
-    <!-- Frame 4 - Content wrapper (1200px max) -->
-    <div class="frame-4" data-node-id="3:25">
-      
-      <!-- Background image 1 (1200x800) -->
-      <img src="assets/28af463c08d8bbbda4e7ca8eb6c0308c0be489eb.png" alt="" class="bg-image" data-node-id="3:26">
-      
-      <!-- Frame 5 - Header section (1200x322) -->
-      <div class="frame-5" data-node-id="3:28">
-        
-        <!-- Logo (433x128) -->
-        <img src="assets/83323434341eb0c91b491ee030922992da346f8e.png" alt="Level Fit" class="logo" data-node-id="18:59">
-        
-        <!-- Frame 6 - Subtitle container -->
-        <div class="frame-6" data-node-id="3:51">
-          <h1 class="subtitle" data-node-id="3:52">Get Ready to Level Up Fitness!</h1>
+  <div class="w-screen bg-red-50 flex justify-center items-center gap-2" id="desktop">
+    <div class="flex-1 self-stretch max-w-[1200px] relative inline-flex flex-col justify-start items-center gap-2.5">
+      <img class="w-[1200px] h-[800px] left-[-9.50px] -top-24 absolute" src="./assets/hero-main-2.png" />
+      <div class="self-stretch pt-10 flex flex-col justify-start items-center gap-2.5">
+        <img class="w-96 h-32 z-10" src="./assets/logo.png" />
+        <div class="self-stretch px-3 z-10 flex flex-col justify-center items-center gap-2.5 overflow-hidden">
+          <div class="self-stretch text-center justify-start"><span
+              class="text-orange-700 text-5xl font-bold font-['Fira_Sans_Condensed'] leading-10">Get
+              Ready to</span><span class="text-white text-5xl font-bold font-['Fira_Sans_Condensed'] leading-10">
+            </span><span class="text-blue-800 text-5xl font-bold font-['Fira_Sans_Condensed'] leading-10">Level Up
+              Fitness</span><span
+              class="text-orange-700 text-5xl font-bold font-['Fira_Sans_Condensed'] leading-10">!</span>
+          </div>
         </div>
-        
-        <!-- Frame 7 - Coming soon badge (373x87) -->
-        <div class="frame-7" data-node-id="3:58">
-          <span class="badge-text" data-node-id="3:59">Coming soon!</span>
+        <div
+          class="px-16 py-6 z-10 rounded-full shadow-[inset_0px_4px_4px_4px_rgba(0,0,0,0.25)] outline outline-9 outline-offset-[-8px] outline-white flex flex-col justify-start items-start gap-2.5 overflow-hidden"
+          style="background: linear-gradient(0deg, #4266CB 0.09%, #769CF8 99.91%);">
+          <div class="text-center justify-start text-white text-4xl font-bold font-['Fira_Sans_Condensed'] leading-10">
+            Coming soon!</div>
         </div>
       </div>
-      
-      <!-- Frame 8 - Hero characters section (1200x269) -->
-      <div class="frame-8" data-node-id="8:20">
-        
-        <!-- Frame 9 - Character 1: Dog mascot (380x235) -->
-        <div class="frame-9" data-node-id="8:21">
-          <img src="assets/c5f15409b327446102bd5de3918c98b8329ea8f0.png" alt="Coach" class="char-img" data-node-id="12:29">
+      <div class="self-stretch px-5 py-4 inline-flex justify-start items-start gap-2.5">
+        <div class="flex-1 self-stretch p-2.5 relative flex justify-end items-center gap-2.5">
+          <img class="w-96 left-[20.50px] top-[-57px] absolute" src="./assets/mascot.png" />
         </div>
-        
-        <!-- Frame 10 - Character 2: Coins/Rewards (380x235) -->
-        <div class="frame-10" data-node-id="8:22">
-          <img src="assets/59310df98fd2dff9c7b42f60a8b2b31ff6743da0.png" alt="3D Demo" class="char-img" data-node-id="12:30">
+        <div class="flex-1 h-60 p-2.5 flex justify-end items-end gap-2.5 z-10">
+          <img class="flex-1 h-52" src="./assets/jar-of-coins.png" />
         </div>
-        
-        <!-- Frame 11 - Character 3: Mannequin (380x235) -->
-        <div class="frame-11" data-node-id="8:26">
-          <img src="assets/5c0debc02281529fd032966363fafb0e41522cf4.png" alt="Rewards" class="char-img" data-node-id="8:16">
+        <div class="flex-1 self-stretch p-2.5 relative flex justify-center items-center gap-2.5">
+          <img class="w-96 h-[471px] left-[0.50px] top-[-61px] absolute" src="./assets/running-mannequin.png" />
         </div>
       </div>
-      
-      <!-- Cards Section with Mascot Overlay -->
-      <div class="cards-section" data-node-id="7:7">
-        
-        <!-- Mascot overlay on the left -->
-        <div class="mascot-overlay">
-          <img src="assets/c5f15409b327446102bd5de3918c98b8329ea8f0.png" alt="Shiba Coach">
-        </div>
-        
-        <div class="cards-inner" data-node-id="7:8">
-          
-          <!-- Card 1 - Train with Cool Coach -->
-          <div class="card-frame" data-node-id="15:37">
-            <div class="card-header">
-              <span>Train with your<br>Cool coach!</span>
-            </div>
-            <div class="card-content">
-              <img src="assets/8d9ef2282180758406a2fec89fed5fc91586756c.png" alt="Coach Mascot">
+      <div
+        class="w-[1068px] p-1.5 left-[66px] top-[547px] absolute bg-white rounded-[45px] shadow-[0px_4px_5px_3px_rgba(0,0,0,0.25)] outline outline-2 outline-offset-[-2px] outline-gray-200 flex flex-col justify-start items-start gap-3">
+        <div
+          class="self-stretch p-4 bg-orange-50 rounded-[40px] shadow-[inset_0px_4px_5px_3px_rgba(0,0,0,0.25)] inline-flex justify-center items-center gap-2.5">
+          <div
+            class="flex-1 h-64 p-2 bg-white rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-start items-start gap-2.5">
+            <div class="w-80 flex-1 relative rounded-[20px] inline-flex justify-center items-start gap-2.5">
+              <img src="./assets/card-1-bg.png" class="absolute left-0 top-0 w-full h-full rounded-[20px]" />
+              <div
+                class="flex-1 h-24 rounded-[20px] shadow-[inset_0px_4px_4px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden">
+                <img src="./assets/card-1-text-bg.png" class="absolute left-0 top-0 w-full" />
+                <div
+                  class="self-stretch flex-1 pt-4 z-10 text-center justify-center text-white text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">
+                  Train with your <br />Cool coach!</div>
+              </div>
+              <img class="w-44 left-[-40px] bottom-[-40px] absolute" src="./assets/card-1-image.png" />
             </div>
           </div>
-          
-          <!-- Card 2 - Learn with 3D Demos -->
-          <div class="card-frame" data-node-id="15:46">
-            <div class="card-header">
-              <span>Learn with<br>3D Demos!</span>
-            </div>
-            <div class="card-content">
-              <img src="assets/5c0debc02281529fd032966363fafb0e41522cf4.png" alt="3D Mannequin">
+          <div
+            class="flex-1 h-64 p-2 bg-white rounded-[20px] shadow-[0px_4px_4px_2px_rgba(0,0,0,0.25)] inline-flex flex-col justify-start items-start gap-2.5">
+            <div
+              class="self-stretch flex-1 relative rounded-[20px] shadow-[inset_0px_4px_4px_0px_rgba(0,0,0,0.25)] inline-flex justify-center items-start gap-2.5">
+              <img src="./assets/card-2-bg.png" class="absolute left-0 top-0 w-full h-full rounded-[20px]" />
+              <div
+                class="flex-1 h-20 rounded-[20px] inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden">
+                <img src="./assets/card-2-text-bg.png" class="absolute left-0 top-0 w-full" />
+                <div
+                  class="self-stretch flex-1 pt-4 z-10 text-center justify-center text-white text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">
+                  Learn with <br />3D Demos!</div>
+              </div>
+              <img class="w-60 h-44 left-[101px] bottom-0 absolute" src="./assets/card-2-image.png" />
             </div>
           </div>
-          
-          <!-- Card 3 - Unlock Rewards -->
-          <div class="card-frame" data-node-id="15:51">
-            <div class="card-header">
-              <span>Unlock Rewards<br>& Fun</span>
-            </div>
-            <div class="card-content">
-              <img src="assets/59310df98fd2dff9c7b42f60a8b2b31ff6743da0.png" alt="Rewards Jar">
+          <div
+            class="flex-1 h-64 p-2 bg-white rounded-[20px] shadow-[0px_4px_4px_2px_rgba(0,0,0,0.25)] inline-flex flex-col justify-start items-start gap-2.5">
+            <div
+              class="self-stretch flex-1 relative rounded-[20px] shadow-[inset_0px_4px_4px_0px_rgba(0,0,0,0.25)] inline-flex justify-center items-start gap-2.5">
+              <img src="./assets/card-3-bg.png" class="absolute left-0 top-0 w-full h-full rounded-[20px]" />
+              <div
+                class="flex-1 h-24 rounded-[20px] shadow-[inset_0px_4px_4px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden">
+                <img src="./assets/card-3-text-bg.png" class="absolute left-0 top-0 h-24 w-full" />
+                <div
+                  class="self-stretch flex-1 pt-4 z-10 text-center justify-center text-white text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">
+                  Unlock Rewards<br />& Fun</div>
+              </div>
+              <img class="w-64 h-40 left-[27px] top-[107px] absolute" src="./assets/jar-of-coins.png" />
             </div>
           </div>
         </div>
       </div>
-      
-      <!-- Frame 18 - Bottom section (1200x529) -->
-      <div class="frame-18" data-node-id="29:88">
-        
-        <!-- Frame 19 - Divider section (1180x69) -->
-        <div class="frame-19" data-node-id="31:89">
-          <!-- Frame 35 - Divider content (670x49) -->
-          <div class="divider-frame" data-node-id="43:43">
-            <span class="divider-line short" data-node-id="31:90"></span>
-            <span class="divider-text" data-node-id="31:92">Be the First to Play!</span>
-            <span class="divider-line long" data-node-id="31:94"></span>
+      <div class="self-stretch flex-1 p-2.5 flex flex-col justify-start items-center overflow-hidden">
+        <div class="self-stretch h-92 p-2.5 inline-flex justify-center items-end gap-2.5 overflow-hidden">
+          <div class="p-2.5 flex justify-center items-center gap-2.5 overflow-hidden">
+            <div class="w-14 h-0.5 bg-orange-300"></div>
+            <div
+              class="text-center justify-center text-neutral-600 text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">
+              Be the First to Play!</div>
+            <div class="w-72 h-0.5 bg-orange-300"></div>
           </div>
         </div>
-        
-        <!-- Frame 20 - Form section (1180x222) -->
-        <div class="frame-20" data-node-id="31:95">
-          <!-- Frame 21 - Email form (621x60) -->
-          <form class="email-form" id="signup-form" data-node-id="34:2">
-            <input type="email" placeholder="Email..." class="email-input" id="email-input" required data-node-id="34:57">
-            <!-- Frame 22 - Button (196x60) -->
-            <button type="submit" class="submit-btn" data-node-id="34:58">
-              <span data-node-id="34:61">Notify Me</span>
-            </button>
-          </form>
+        <div class="self-stretch flex-1 p-2.5 inline-flex justify-center items-start gap-2.5 overflow-hidden">
+          <div
+            class="w-[621px] h-14 pl-4 rounded-[45px] shadow-[0px_4px_5px_2px_rgba(0,0,0,0.15)] outline outline-1 outline-neutral-400 inline-flex justify-start items-start gap-2.5 overflow-hidden">
+            <input type="email" placeholder="Enter your email..."
+              class="flex-1 self-stretch justify-center text-stone-300 text-xl font-['Fira_Sans_Condensed'] leading-7 tracking-wider bg-transparent outline-none" />
+            <div
+              class="self-stretch px-8 py-2.5 bg-gradient-to-b from-orange-400 to-orange-600 rounded-[45px] shadow-[inset_0px_3px_5px_0px_rgba(0,0,0,0.25)] flex justify-center items-center gap-2.5 overflow-hidden">
+              <div
+                class="justify-center text-white text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">
+                Notify Me</div>
+            </div>
+          </div>
         </div>
       </div>
-      
+    </div>
+
+  </div>
+  <div class="w-screen h-[667px] inline-flex flex-col justify-center items-center overflow-hidden" id="mobile">
+    <div class="self-stretch h-80 p-3 flex flex-col justify-start items-center overflow-hidden">
+      <div class="self-stretch px-8 flex flex-col justify-center items-center gap-2.5 overflow-hidden">
+        <img class="w-64 h-20" src="./assets/logo.png" />
+      </div>
+      <div class="self-stretch px-3 flex flex-col justify-center items-center gap-2.5 overflow-hidden">
+        <div class="self-stretch text-center justify-start"><span
+            class="text-orange-700 text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">Get Ready
+            to</span><span class="text-white text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">
+          </span><span
+            class="text-blue-800 text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">Level
+            Up</span></div>
+      </div>
+      <div style="background: linear-gradient(0deg, #4266CB 0.09%, #769CF8 99.91%);"
+        class="h-16 px-8 py-6 rounded-full shadow-[inset_0px_4px_4px_4px_rgba(0,0,0,0.25)] outline outline-9 outline-offset-[-8px] outline-white flex flex-col justify-center items-center gap-2.5 overflow-hidden">
+        <div
+          class="text-center justify-start text-white text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">
+          Coming Soon!</div>
+      </div>
+    </div>
+    <div class="self-stretch flex-1 flex flex-col justify-start items-start">
+      <div class="self-stretch flex-1 px-3 py-1 relative flex flex-col justify-start items-start gap-1">
+        <img class="w-36 h-44 left-[26.93px] top-[-126.51px] absolute" src="./assets/mascot.png" />
+        <img class="w-44 h-56 left-[223.26px] top-[-125.25px] absolute" src="./assets/running-mannequin.png" />
+        <div
+          class="self-stretch z-10 h-16 p-2.5 bg-gradient-to-b from-blue-500 to-blue-800 rounded-2xl shadow-[0px_3px_5px_2px_rgba(0,0,0,0.15)] shadow-[inset_4px_4px_4px_3px_rgba(0,0,0,0.25)] outline outline-[5px] outline-offset-[-5px] outline-white inline-flex justify-center items-center gap-2.5 overflow-hidden">
+          <div
+            class="flex-1 self-stretch text-center justify-center text-white text-xl font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
+            Train with your <br />Cool coach!</div>
+        </div>
+        <div
+          class="self-stretch z-10 flex-1 px-4 py-2.5 bg-gradient-to-b from-orange-400 to-orange-600 rounded-2xl shadow-[0px_3px_5px_2px_rgba(0,0,0,0.15)] shadow-[inset_4px_4px_4px_3px_rgba(0,0,0,0.25)] outline outline-[5px] outline-offset-[-5px] outline-white inline-flex justify-center items-center gap-2.5 overflow-hidden">
+          <div
+            class="flex-1 self-stretch text-center justify-center text-white text-xl font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
+            Learn with 3D Demos!</div>
+        </div>
+        <div
+          class="self-stretch z-10 h-12 p-2.5 bg-gradient-to-b from-blue-500 to-blue-800 rounded-2xl shadow-[0px_3px_5px_2px_rgba(0,0,0,0.15)] shadow-[inset_4px_4px_4px_3px_rgba(0,0,0,0.25)] outline outline-[5px] outline-offset-[-5px] outline-white inline-flex justify-center items-center gap-2.5 overflow-hidden">
+          <div
+            class="flex-1 self-stretch text-center justify-center text-white text-xl font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
+            Unlock Rewards & Fun!</div>
+        </div>
+        <img class="w-32 h-32 left-[249px] top-[51px] absolute z-20" src="./assets/mannequinn.png" />
+      </div>
+      <div
+        class="self-stretch flex-1 px-3 py-4 bg-white flex flex-col justify-start items-center gap-4 overflow-hidden">
+        <div class="self-stretch inline-flex justify-center items-center gap-5 overflow-hidden">
+          <div class="flex-1 h-0.5 bg-orange-300"></div>
+          <div
+            class="text-center justify-center text-neutral-600 text-xl font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
+            Be the First to Play!</div>
+          <div class="flex-1 h-0.5 bg-orange-300"></div>
+        </div>
+        <div
+          class="w-full max-w-80 pl-4 rounded-[45px] shadow-[0px_3px_5px_12px_rgba(0,0,0,0.25)] outline outline-1 outline-neutral-400 inline-flex justify-start items-start gap-2.5 overflow-hidden">
+          <div
+            class="flex-1 h-10 justify-center text-stone-300 text-xl font-medium font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
+            Email...</div>
+          <div
+            class="w-28 h-10 px-8 py-2.5 bg-gradient-to-b from-orange-400 to-orange-600 rounded-[45px] shadow-[inset_0px_3px_5px_0px_rgba(0,0,0,0.25)] flex justify-center items-center gap-2.5 overflow-hidden">
+            <div
+              class="justify-center text-white text-xl font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
+              Notify Me</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  
-  <script src="script.js"></script>
 </body>
+
 </html>
