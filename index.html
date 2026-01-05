@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="w-screen bg-red-50 flex justify-center items-center gap-2" id="desktop">
+  <div class="w-full bg-red-50 flex justify-center items-center gap-2" id="desktop">
     <div class="flex-1 self-stretch max-w-[1200px] relative inline-flex flex-col justify-start items-center gap-2.5">
       <img class="w-[1200px] h-[800px] left-[-9.50px] -top-24 absolute" src="./assets/hero-main-2.png" />
       <div class="self-stretch pt-10 flex flex-col justify-start items-center gap-2.5">
@@ -50,16 +50,16 @@
         </div>
       </div>
       <div
-        class="w-[1068px] p-1.5 left-[66px] top-[547px] absolute bg-white rounded-[45px] shadow-[0px_4px_5px_3px_rgba(0,0,0,0.25)] outline outline-2 outline-offset-[-2px] outline-gray-200 flex flex-col justify-start items-start gap-3">
+        class="w-[90%] max-w-[1068px] p-1.5 left-[66px] top-[547px] absolute bg-white rounded-[45px] shadow-[0px_4px_5px_3px_rgba(0,0,0,0.25)] outline outline-2 outline-offset-[-2px] outline-gray-200 flex flex-col justify-start items-start gap-3">
         <div
           class="self-stretch p-4 bg-orange-50 rounded-[40px] shadow-[inset_0px_4px_5px_3px_rgba(0,0,0,0.25)] inline-flex justify-center items-center gap-2.5">
           <div
             class="flex-1 h-64 p-2 bg-white rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-start items-start gap-2.5">
-            <div class="w-80 flex-1 relative rounded-[20px] inline-flex justify-center items-start gap-2.5">
+            <div class="w-full flex-1 relative rounded-[20px] inline-flex justify-center items-start gap-2.5">
               <img src="./assets/card-1-bg.png" class="absolute left-0 top-0 w-full h-full rounded-[20px]" />
               <div
                 class="flex-1 h-24 rounded-[20px] shadow-[inset_0px_4px_4px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden">
-                <img src="./assets/card-1-text-bg.png" class="absolute left-0 top-0 w-full" />
+                <img src="./assets/card-1-text-bg.png" class="absolute left-0 top-0 w-full h-24" />
                 <div
                   class="self-stretch flex-1 pt-4 z-10 text-center justify-center text-white text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">
                   Train with your <br />Cool coach!</div>
@@ -74,12 +74,12 @@
               <img src="./assets/card-2-bg.png" class="absolute left-0 top-0 w-full h-full rounded-[20px]" />
               <div
                 class="flex-1 h-20 rounded-[20px] inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden">
-                <img src="./assets/card-2-text-bg.png" class="absolute left-0 top-0 w-full" />
+                <img src="./assets/card-2-text-bg.png" class="absolute left-0 top-0 w-full  h-24" />
                 <div
                   class="self-stretch flex-1 pt-4 z-10 text-center justify-center text-white text-3xl font-bold font-['Fira_Sans_Condensed'] leading-7 tracking-wider">
                   Learn with <br />3D Demos!</div>
               </div>
-              <img class="w-60 h-44 left-[101px] bottom-0 absolute" src="./assets/card-2-image.png" />
+              <img class="w-60 h-44 left-[30%] bottom-0 absolute" src="./assets/card-2-image.png" />
             </div>
           </div>
           <div
@@ -111,7 +111,7 @@
         </div>
         <div class="self-stretch flex-1 p-2.5 inline-flex justify-center items-start gap-2.5 overflow-hidden">
           <div
-            class="w-[621px] h-14 pl-4 rounded-[45px] shadow-[0px_4px_5px_2px_rgba(0,0,0,0.15)] outline outline-1 outline-neutral-400 inline-flex justify-start items-start gap-2.5 overflow-hidden">
+            class="w-[621px] bg-white  h-14 pl-4 rounded-[45px] shadow-[0px_4px_5px_2px_rgba(0,0,0,0.15)] outline outline-1 outline-neutral-400 inline-flex justify-start items-start gap-2.5 overflow-hidden">
             <input type="email" placeholder="Enter your email..."
               class="flex-1 self-stretch justify-center text-stone-300 text-xl font-['Fira_Sans_Condensed'] leading-7 tracking-wider bg-transparent outline-none" />
             <div
@@ -126,8 +126,10 @@
     </div>
 
   </div>
-  <div class="w-screen h-[667px] inline-flex flex-col justify-center items-center overflow-hidden" id="mobile">
-    <div class="self-stretch h-80 p-3 flex flex-col justify-start items-center overflow-hidden">
+  <div
+    class="w-screen h-screen bg-no-repeat bg-center bg-cover inline-flex flex-col justify-center items-center overflow-hidden"
+    style="background-image: url('./assets/mobile-bg.png');" id="mobile">
+    <div class="self-stretch h-80 p-3 flex flex-col items-center overflow-hidden" id="mobile-logo-container">
       <div class="self-stretch px-8 flex flex-col justify-center items-center gap-2.5 overflow-hidden">
         <img class="w-64 h-20" src="./assets/logo.png" />
       </div>
@@ -147,28 +149,30 @@
       </div>
     </div>
     <div class="self-stretch flex-1 flex flex-col justify-start items-start">
-      <div class="self-stretch flex-1 px-3 py-1 relative flex flex-col justify-start items-start gap-1">
-        <img class="w-36 h-44 left-[26.93px] top-[-126.51px] absolute" src="./assets/mascot.png" />
-        <img class="w-44 h-56 left-[223.26px] top-[-125.25px] absolute" src="./assets/running-mannequin.png" />
-        <div
-          class="self-stretch z-10 h-16 p-2.5 bg-gradient-to-b from-blue-500 to-blue-800 rounded-2xl shadow-[0px_3px_5px_2px_rgba(0,0,0,0.15)] shadow-[inset_4px_4px_4px_3px_rgba(0,0,0,0.25)] outline outline-[5px] outline-offset-[-5px] outline-white inline-flex justify-center items-center gap-2.5 overflow-hidden">
+      <div class="self-stretch flex-1 px-3 py-1 relative flex flex-col justify-end items-start gap-1">
+        <img class="w-36 h-44 left-4 bottom-[100px] absolute" src="./assets/mascot.png" />
+        <img class="w-44 h-56 right-0 bottom-[70px] absolute" src="./assets/running-mannequin.png" />
+        <div class="flex flex-col gap-1 w-full">
           <div
-            class="flex-1 self-stretch text-center justify-center text-white text-xl font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
-            Train with your <br />Cool coach!</div>
-        </div>
-        <div
-          class="self-stretch z-10 flex-1 px-4 py-2.5 bg-gradient-to-b from-orange-400 to-orange-600 rounded-2xl shadow-[0px_3px_5px_2px_rgba(0,0,0,0.15)] shadow-[inset_4px_4px_4px_3px_rgba(0,0,0,0.25)] outline outline-[5px] outline-offset-[-5px] outline-white inline-flex justify-center items-center gap-2.5 overflow-hidden">
+            class="self-stretch relative h-16 p-2.5 bg-gradient-to-b from-blue-500 to-blue-800 rounded-2xl shadow-[0px_3px_5px_2px_rgba(0,0,0,0.15)] shadow-[inset_4px_4px_4px_3px_rgba(0,0,0,0.25)] outline outline-[5px] outline-offset-[-5px] outline-white inline-flex justify-center items-center gap-2.5">
+            <div
+              class="flex-1 z-10 self-stretch text-center justify-center text-white text-lg font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
+              Train with your <br />Cool coach!</div>
+          </div>
           <div
-            class="flex-1 self-stretch text-center justify-center text-white text-xl font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
-            Learn with 3D Demos!</div>
-        </div>
-        <div
-          class="self-stretch z-10 h-12 p-2.5 bg-gradient-to-b from-blue-500 to-blue-800 rounded-2xl shadow-[0px_3px_5px_2px_rgba(0,0,0,0.15)] shadow-[inset_4px_4px_4px_3px_rgba(0,0,0,0.25)] outline outline-[5px] outline-offset-[-5px] outline-white inline-flex justify-center items-center gap-2.5 overflow-hidden">
+            class="self-stretch z-10 px-4 py-2.5 bg-gradient-to-b from-orange-400 to-orange-600 rounded-2xl shadow-[0px_3px_5px_2px_rgba(0,0,0,0.15)] shadow-[inset_4px_4px_4px_3px_rgba(0,0,0,0.25)] outline outline-[5px] outline-offset-[-5px] outline-white inline-flex justify-center items-center gap-2.5">
+            <div
+              class="flex-1 self-stretch text-center justify-center text-white text-lg font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
+              Learn with 3D Demos!</div>
+          </div>
           <div
-            class="flex-1 self-stretch text-center justify-center text-white text-xl font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
-            Unlock Rewards & Fun!</div>
+            class="self-stretch z-10 p-2.5 bg-gradient-to-b from-blue-500 to-blue-800 rounded-2xl shadow-[0px_3px_5px_2px_rgba(0,0,0,0.15)] shadow-[inset_4px_4px_4px_3px_rgba(0,0,0,0.25)] outline outline-[5px] outline-offset-[-5px] outline-white inline-flex justify-center items-center gap-2.5">
+            <div
+              class="flex-1 flex self-stretch text-center items-center justify-center text-white text-lg font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
+              Unlock Rewards & Fun!</div>
+          </div>
         </div>
-        <img class="w-32 h-32 left-[249px] top-[51px] absolute z-20" src="./assets/mannequinn.png" />
+        <img class="w-32 h-32 right-[0px] bottom-[-20px] absolute z-20" src="./assets/mannequinn.png" />
       </div>
       <div
         class="self-stretch flex-1 px-3 py-4 bg-white flex flex-col justify-start items-center gap-4 overflow-hidden">
@@ -180,19 +184,17 @@
           <div class="flex-1 h-0.5 bg-orange-300"></div>
         </div>
         <div
-          class="w-full max-w-80 pl-4 rounded-[45px] shadow-[0px_3px_5px_12px_rgba(0,0,0,0.25)] outline outline-1 outline-neutral-400 inline-flex justify-start items-start gap-2.5 overflow-hidden">
-          <div
-            class="flex-1 h-10 justify-center text-stone-300 text-xl font-medium font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
-            Email...</div>
-          <div
-            class="w-28 h-10 px-8 py-2.5 bg-gradient-to-b from-orange-400 to-orange-600 rounded-[45px] shadow-[inset_0px_3px_5px_0px_rgba(0,0,0,0.25)] flex justify-center items-center gap-2.5 overflow-hidden">
-            <div
-              class="justify-center text-white text-xl font-bold font-['Fira_Sans_Condensed'] leading-5 tracking-wide">
-              Notify Me</div>
-          </div>
+          class="w-full flex max-w-80 h-14 pl-4 rounded-[45px] shadow-[0px_4px_5px_2px_rgba(0,0,0,0.15)] outline outline-1 outline-neutral-400 justify-start items-start">
+          <input type="email" placeholder="Enter your email..."
+            class="flex-1 self-stretch justify-center text-stone-300 text-lg font-['Fira_Sans_Condensed'] leading-7 tracking-wider bg-transparent outline-none" />
+          <button
+            class="self-stretch shrink w-[200px] flex text-white text-lg font-bold font-['Fira_Sans_Condensed'] leading-7 px-2 py-2.5 bg-gradient-to-b from-orange-400 to-orange-600 rounded-[45px] shadow-[inset_0px_3px_5px_0px_rgba(0,0,0,0.25)] flex justify-center items-center gap-2">
+            Notify Me
+          </button>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 

@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #mobile {
@@ -17,5 +17,15 @@ body {
 
   #desktop {
     display: none;
+  }
+}
+
+#mobile-logo-container {
+  justify-content: center;
+}
+
+@media (max-height: 800px) {
+  #mobile-logo-container {
+    justify-content: start;
   }
 }
